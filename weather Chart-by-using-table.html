@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            color: white;
+            width: 600px;
+            font-family: arial;
+        }
+        .main-table{
+            background-image:url(public/images/sky.jpg);
+        }
+        .icons{
+            font-size: 20px;
+        }
+        .bi-clouds {
+            font-size: 90px;
+        }
+        .temp{
+            font-size: 50px;
+            text-shadow: 1px 1px 1px black;
+        }
+        .last-table{
+            background-color: rgb(212, 206, 206);
+            color: black;
+        }
+        body tr td{
+            padding: px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <table class="main-table" width="100%">
+        <tr>
+            <td colspan="4">Hydrabad, Tekangana
+                <p>upadate a few minutes ago</p>
+            </td>
+            <td class="icons" colspan="1" align="right" valign="top">
+                <span  class="bi bi-box-arrow-in-up-right"></span>
+                <span class="bi bi-three-dots"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span  class="bi bi-clouds"></span>
+            </td>
+            <td class="temp">26</td>
+            <td align="right">
+                &deg;C<br>
+                F
+            </td>
+            <td>
+                29&deg;<br>
+                24&deg;<br>
+            </td>
+            <td>
+                Precipitation: 3%<br>
+                Wind: 9kmph<br>
+                Humidity: 72%
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">Mostly cloud - Wed 13, 9:15AM</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <table width="100%">
+                    <tr>
+                        <td>7PM</td>
+                        <td>10PM</td>
+                        <td>1AM</td>
+                        <td>4AM</td>
+                        <td>7AM</td>
+                        <td>10AM</td>
+                        <td>1PM</td>
+                        <td>4PM</td>
+                    </tr>
+                    <tr>
+                        <td colspan="8">
+                            <input type="range" value="1" >
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="8">
+                <table width="100%">
+                    <tr class="last-table">
+                        <td align="center">
+                            Tue 12<br>
+                            <span class="bi-cloud"></span><br>
+                            31&deg;<br>
+                            24&deg;
+                        </td>
+                        <td  align="center">
+                            Tue 12<br>
+                            <span class="bi-cloud"></span><br>
+                            31&deg;<br>
+                            24&deg;
+                        </td>
+                        <td  align="center">
+                            Tue 12<br>
+                            <span class="bi-cloud"></span><br>
+                            31&deg;<br>
+                            24&deg;
+                        </td>
+                        <td  align="center">
+                            Tue 12<br>
+                            <span class="bi-cloud"></span><br>
+                            31&deg;<br>
+                            24&deg;
+                        </td>
+                        <td  align="center">Tue 12<br>
+                            <span class="bi-cloud"></span><br>
+                            31&deg;<br>
+                            24&deg;
+                        </td>
+                        <td  align="center">
+                            Tue 12<br>
+                            <span class="bi-cloud"></span><br>
+                            31&deg;<br>
+                            24&deg;
+                        </td>
+                        <td  align="center">Tue 12<br>
+                            <span class="bi-cloud"></span><br>
+                            31&deg;<br>
+                            24&deg;
+                        </td>
+                        <td  align="center">
+                            Tue 12<br>
+                            <span class="bi-cloud"></span><br>
+                            31&deg;<br>
+                            24&deg;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+    </table>
+    
+</body>
+</html>
