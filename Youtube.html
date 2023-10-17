@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            padding-left: 25px;
+            font-size: 25px;
+        }
+
+        .search-area{
+            display: flex;
+            justify-content: space-between;
+        }
+        .search-bar{
+            background-color: white;
+            border: 1px solid black;
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            border-radius: 15px;
+            color:gray;
+            font-size: 18px;
+        }
+        .bi-mic-fill{
+            padding: 10px;
+            
+        }
+        .shortcut-button{
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .profile-pic{
+            border-radius: 30px;
+        }
+        .iteam{
+            margin-bottom: 20px;
+            font-size: 12px;
+            padding-left: 10px;
+            margin-top: 20px;
+           
+        }
+        nav div{
+            padding-bottom: 10px;
+            font-size: 22px;
+            padding-left:5px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 11fr;
+        }
+        .article{
+            display:flex;
+            justify-content: space-between;
+        }
+        article{
+            display: grid;
+            grid-template-columns: 10fr 2fr;
+            font-family: arial;
+            margin-top: 10px;
+           
+        }
+        .title{
+            font-size: 25px;
+            
+            font-family: arial;
+        }
+        .sub-title{
+            font-size: 20px;
+            font-family: arial;
+            color:darkgray;
+        }
+        .text{
+            font-size: 15px;
+            font-family: arial;
+            color: darkgray;
+        }
+        .subscribe{
+            background-color: rgb(245, 241, 241);
+            width: 150px;
+            padding: 8px;
+            height: 16px;
+            text-align: center;
+            font-size: 15px;
+            font-family: arial;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+        .categories{
+            display: flex;
+            justify-content: space-around;
+            margin-right: 30px;
+            font-family: arial;
+            color:rgb(81, 79, 79);
+            font-size: 13px;
+            font-weight: bold;
+            padding-top: 15px;
+        }
+        .VIDEOS{
+            font-size: 13px;
+            padding: 20px;
+            margin-right: 40px;
+            font-family: arial;
+            font-weight: bold;
+            color: rgb(86, 80, 80);
+
+          
+        }
+        .thumbnel{
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+            grid-gap: 5px;
+        }
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="bi bi-justify"></span>
+            <img class="youtube" src="public/images/youtube-logo.jpg" width="100" height="40">
+        </div>
+        <div class="search-area">
+            <div class="search-bar">
+                <span>Search</span>
+                <span class="bi bi-search"></span>
+            </div>
+            <span class="bi bi-mic-fill"></span>
+        </div>
+        <div class="shortcut-button">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell-fill"></span>
+            <img class="profile-pic" src="public/images/kids fashion.jpeg" width="30" height="30">
+        </div>
+    </header>
+    <section>
+        <nav>
+            <div class="iteam">
+                <div class="bi bi-house-door"></div>
+                <span>Home</span>
+            </div>
+            <div class="iteam">
+                <div class="bi bi-film"></div>
+                <span>Shorts</span>
+            </div>
+            <div class="iteam">
+                <div class="bi bi-collection-play"></div>
+                <span>Subscriptions</span>
+            </div>
+            <div class="iteam">
+                <div class="bi bi-play-btn"></div>
+                <span>Library</span>
+            </div>
+        </nav>
+        <main>
+           <div>
+                <img src="public/images/nit-template.jpg" width="100%">
+           </div>
+           <article>
+                <div>
+                    <img src="public/images/nit-logo.jpg" align="left" width="170">
+                    <div class="title"> Naresh i Technologies</div><br>
+                    <div class="sub-title">@NareshIT1.19M subscribers2.8K videos</div><br>
+                    <div class="text">We are one of the India's largest software training organization and an Top </div><br>
+                    <div ><a href="instagram.com/nareshitech"> instagram.com/nareshitech and 7 more links</a></div><br>
+                    
+                    
+                </div>
+                <div class="subscribe">
+                    <span class="bi bi-bell"></span>
+                        Subscribe
+                    <span class="bi bi-chevron-bar-down"></span>
+                </div>
+
+            </article>
+
+            <div class="categories">
+                <span>HOME</span>
+                <span>VIDEOS</span>
+                <span>SHORTS</span>
+                <span>LIVE</span>
+                <span>PLAYLISTS</span>
+                <span>COMMUNITY</span>
+                <span>CHANEL</span>
+                <span>ABOUT</span>
+                <span class="bi bi-chevron-right"></span>
+            </div>
+
+            <div class="VIDEOS">
+                <span>VIDEOS</span>
+                <span class="bi bi-play-fill"></span>
+                <span>PLAY ALL</span>
+            </div>
+
+            <div class="thumbnel">
+                <div>
+                    <iframe width="100%" src="https://www.youtube.com/embed/Ft-v5aLDWqc"></iframe>
+                </div>
+                <div>
+                    <iframe width="100%" src="https://www.youtube.com/embed/DeEszXEewHs"></iframe>
+                </div>
+                <div>
+                    <iframe width="100%" src="https://www.youtube.com/embed/f5doC5v3Xd8"></iframe>
+                </div>
+                <div>
+                    <iframe width="100%" src="https://www.youtube.com/embed/X7RNpVTemHo"></iframe>
+                </div>
+                <div>
+                    <iframe width="100%" src="https://www.youtube.com/embed/tvrNm901RK8"></iframe>
+                </div>
+            </div>
+           
+        </main>
+    </section>
+
+    
+</body>
+</html>
