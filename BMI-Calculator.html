@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BMI Calculator</title>
+   <link rel="stylesheet" href="..//node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="..//node_modules/bootstrap-icons/font/bootstrap-icons.css">
+ <script type="text/javascript">
+   function calculateClick() {
+        var M = document.getElementById("optMale");
+        var F = document.getElementById("optFemale");
+        var  H = parseFloat(document.getElementById("Height").value);
+        var  W = parseFloat(document.getElementById("Weight").value);
+        var result= document.getElementById("BMI");
+        var v =document.getElementById("Slider");
+       
+        if(optMale.checked)
+        {
+           var BMI= W/ Math.pow(H/100,2);
+           result.innerText= "Your BMI "+  BMI.toFixed(2);
+           
+           if ( BMI<=18.4){
+               v.style.marginLeft="55px";
+           } else if (BMI>= 18.5 && BMI <= 24.9){
+            v.style.marginLeft="200px";
+           }else if((BMI >= 25.0 && BMI <= 29.9)){
+            v.style.marginLeft="370px";
+         }else if((BMI >=30.0 )) {
+            v.style.marginLeft="520px";
+           }
+         }
+
+           else if(M.checked){
+           var BMI= W/ Math.pow(H/100,2);
+           result.innerText= "your BMI"+ BMI.toFixed(2);
+           
+           if ( BMI<=18.4){
+            v.style.marginLeft="60px";
+         } else if (BMI>= 18.5 && BMI <= 24.9){
+            v.style.marginLeft="220px";
+         }else if((BMI >= 25.0 && BMI <= 29.9)){
+            v.style.marginLeft="380px";
+         }else if((BMI >=30.0 )) {
+            v.style.marginLeft="550px";
+         }
+          }
+   }
+ </script>
+</head>
+<body class="container-fluid bg-dark text-white"  >
+   <div >
+      <h3 class="text-center m-5" style="text-shadow: 2px 2px 2px red;" >BMI CALCULATOR</h3>
+      <div class="text-center mb-3  " >
+      <input type="radio"  checked id="optMale" class="form-check-input" name="Gender"><label class="form-check-label">Male</label>
+      <input type="radio"  id="optFemale" class="form-check-input" name="Gender"><label class="form-checl-label">Female</label>
+      </div>
+      <div class="d-flex justify-content-around">
+      <div class="me-3">
+           Age(1 year or above)*
+           <input type="number" id="Age"  maxlength="3"  placeholder="years">  
+      </div>
+      <div class=" me-2" > Height*
+            <input type="number" id="Height"  maxlength="3" placeholder="in cms" ></div>
+      <div>Weight*
+            <input type="number" id="Weight"  maxlength="3" placeholder="kg" ></div>
+         </div>
+         <div class="text-center mt-5 mb-3">
+            <button type="button" onclick="calculateClick()" class="btn btn-primary">Calculate</button>
+         </div>
+      <div id="BMI" class="text-center mt-5 h3">
+        <h4>Your BMI</h4>
+      </div>
+      <div class="mt-5">
+         <div>
+            <h5> Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</h5>
+        </div>
+         <div class="progress w-50 mt-5"  >
+            <div class="progress-bar w-25 bg-info" >Under Weight</div>
+            <div class="progress-bar w-25 bg-success">Noramal</div> 
+            <div class="progress-bar w-25 bg-warning ">Overweight</div> 
+            <div class="progress-bar w-25 bg-danger">Obses</div>      
+         </div>  
+         <div id="Slider"  >
+         <span  class="bi bi-caret-down-fill"> </span>
+         <div>You</div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
